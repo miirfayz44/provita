@@ -135,10 +135,8 @@ button {
 
 .desktop {
   background-color: #ffffff;
-  /* overflow: hidden; */
   width: 100%;
   min-width: 1440px;
-  min-height: 8735px;
   position: relative;
 }
 
@@ -810,6 +808,31 @@ button {
   font-style: var(--text-font-style);
 }
 
+.desktop .text-wrappers-18 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--text-font-family);
+  font-weight: var(--text-font-weight);
+  color: var(--x);
+  font-size: var(--text-font-size);
+  letter-spacing: var(--text-letter-spacing);
+  line-height: var(--text-line-height);
+  font-style: var(--text-font-style);
+}
+
+.desktop .text-wrapperss-18 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--text-font-family);
+  font-weight: var(--text-font-weight);
+  color: var(--x);
+  font-size: var(--text-font-size);
+  letter-spacing: var(--text-letter-spacing);
+  line-height: var(--text-line-height);
+  font-style: var(--text-font-style);
+}
+
+
 .desktop .frame-20 {
   display: flex;
   align-items: flex-end;
@@ -857,6 +880,19 @@ button {
 }
 
 .desktop .frame-22 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 30px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #7dac5d;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.desktop .framer-22 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -3270,7 +3306,7 @@ input {
     width: 330px;
     height: 324px;
     top: 3752px;
-    left: 308px;
+    left: 260px;
     border-radius: 10px;
   }
 
@@ -3402,6 +3438,21 @@ input {
     top: 2075px;
     left: 32px;
     opacity: 1;
+  }
+
+  .desktop .div-5 {
+    top: 2075px;
+    left: 35px;
+  }
+
+  .desktop .rectangle-13 {
+    position: absolute;
+    top: 2076px;
+    left: 29px;
+    width: 291px;
+    height: 42px;
+    background-color: #7dac5d;
+    border-radius: 5px;
   }
 
   .desktop .frame-64 {
@@ -3578,16 +3629,16 @@ input {
   }
 
   .desktop .rectangle-14 {
-    width: 406px;
+    width: 385px;
     height: 324px;
     top: 3792px;
-    left: 32px;
+    left: 18px;
     border-radius: 10px;
   }
 
   .desktop .frame-84 {
     top: 3854px;
-    left: 62px;
+    left: 45px;
   }
 
   .desktop .frame-wrapper {
@@ -3602,6 +3653,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    top: 87px;
   }
 
   .desktop .rectangle-6 {
@@ -3765,12 +3817,29 @@ input {
     background-color: #0071BC;
   }
 
+  .desktop .component {
+    position: absolute;
+    top: 8319px;
+    left: -5px;
+    width: 1445px;
+    height: 486px;
+  }
+
+  .desktop .frame-22 {
+    top: 95px;
+  }
+
+  .desktop .framer-22 {
+    top: 17px;
+  }
+
   .desktop .text-wrapper-18 {
-    width: 240px;
+    width: 645px;
     height: 88px;
     opacity: 1;
     font-family: Arial;
     font-weight: 400;
+    font-style: Regular;
     font-size: 18px;
     line-height: 120%;
     letter-spacing: -2%;
@@ -3845,11 +3914,12 @@ input {
     top: 9886px;
     left: 510px;
   }
-  .desktop .text-wrapper-32{
+
+  .desktop .text-wrapper-32 {
     color: #000000;
   }
 
-  .desktop .frame-41{
+  .desktop .frame-41 {
     background-color: #000000;
   }
 
@@ -3922,6 +3992,7 @@ input {
     opacity: 1;
     top: 9977px;
     left: 687px;
+    display: none;
   }
 
   .desktop .rectangle-20 {
@@ -3934,6 +4005,7 @@ input {
     opacity: 1;
     top: 9977px;
     left: 843px;
+    display: none;
   }
 
   .desktop .rectangle-22 {
@@ -3946,6 +4018,7 @@ input {
     opacity: 1;
     top: 9960px;
     left: 997px;
+    display: none;
   }
 
   .desktop .rectangle-23 {
@@ -3958,6 +4031,7 @@ input {
     opacity: 1;
     top: 99px;
     left: 1445px;
+    display: none;
   }
 
   .desktop .rectangle-24 {
@@ -3970,6 +4044,7 @@ input {
     opacity: 1;
     top: 9977px;
     left: 1130px;
+    display: none;
   }
 
   .desktop .rectangle-25 {
@@ -3982,6 +4057,7 @@ input {
     opacity: 1;
     top: 9955px;
     left: 1360px;
+    display: none;
   }
 
   .desktop .rectangle-26 {
@@ -3994,6 +4070,7 @@ input {
     opacity: 1;
     top: 9950px;
     left: 1260px;
+    display: none;
   }
 
   .desktop .frame-93 {
@@ -4076,12 +4153,12 @@ input {
     height: 602px;
     border-radius: 10px;
     opacity: 1;
-    top: 10990px;
+    top: 11065px;
     left: 32px;
   }
 
   .desktop .frame-51 {
-    top: 11034px;
+    top: 11100px;
     left: 53px;
   }
 
@@ -4089,12 +4166,12 @@ input {
     width: 590px;
     height: 300px;
     opacity: 1;
-    top: 11153px;
+    top: 11215px;
     left: 53px;
   }
 
   .desktop .frame-54 {
-    top: 11521px;
+    top: 11575px;
     left: 53px;
   }
 
@@ -4102,7 +4179,7 @@ input {
     width: 679px;
     height: 842px;
     opacity: 1;
-    top: 11660px;
+    top: 11740px;
     left: 33px;
   }
 
@@ -4110,7 +4187,7 @@ input {
     width: 304px;
     height: 28px;
     opacity: 1;
-    top: 12410px;
+    top: 12465px;
     left: 51px;
   }
 
@@ -4118,7 +4195,7 @@ input {
     width: 266px;
     height: 22px;
     opacity: 1;
-    top: 12455px;
+    top: 12509px;
     left: 51px;
   }
 
@@ -4181,12 +4258,12 @@ input {
   }
 
   .desktop .coolicon-wrapper {
-    top: 13316px;
+    top: 13388px;
     left: 405px;
   }
 
   .desktop .frame-95 {
-    top: 13316px;
+    top: 13388px;
     left: 339px;
   }
 }
