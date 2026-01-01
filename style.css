@@ -3291,8 +3291,10 @@ input {
 
 @media (max-width: 1439px) {
   body {
+    max-width: 100%;
     width: 100%;
     overflow-x: hidden;
+
   }
 
   .desktop .rectangle-2 {
@@ -4283,9 +4285,11 @@ input {
 
 @media (max-width: 320px) {
   body {
+    max-width: 100%;
     width: 100%;
     overflow-x: hidden;
   }
+
   .desktop .frame-6 {
     display: none;
   }
@@ -5200,33 +5204,41 @@ width: 320px;
     top: 2129px;
     left: 13px;
   }
+
   .desktop .text-wrapper-51 {
     width: 171px;
   }
+
   .desktop .frame-61 {
     top: 2130px;
     left: 134px;
-}
-.desktop .text-wrapper-54{
-  width: 154px;
-}
-.desktop .frame-62 {
-  top: 2403px;
-  left: 16px;
-}
-.desktop .frame-55 {
-  top: 2680px;
-  left: 42px;
-}
-.desktop .frame-95 {
- display: none;
-}
-.desktop .coolicon-wrapper {
-  display: none;
-}
-.desktop .frame-56 {
-  top: 2768px;
-  left: 78px;
-}
+  }
+
+  .desktop .text-wrapper-54 {
+    width: 154px;
+  }
+
+  .desktop .frame-62 {
+    top: 2403px;
+    left: 16px;
+  }
+
+  .desktop .frame-55 {
+    top: 2680px;
+    left: 42px;
+  }
+
+  .desktop .frame-95 {
+    display: none;
+  }
+
+  .desktop .coolicon-wrapper {
+    display: none;
+  }
+
+  .desktop .frame-56 {
+    top: 2768px;
+    left: 78px;
+  }
 
 }
