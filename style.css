@@ -3290,6 +3290,11 @@ input {
 
 
 @media (max-width: 1439px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .desktop .rectangle-2 {
     position: absolute;
     top: 115px;
@@ -4277,6 +4282,10 @@ input {
 }
 
 @media (max-width: 320px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
   .desktop .frame-6 {
     display: none;
   }
