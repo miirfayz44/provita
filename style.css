@@ -3571,6 +3571,9 @@ input {
 
 
 @media (max-width: 1439px) {
+  body{
+    overflow-x: hidden;
+  }
   .components-container {
     width: 48%;
     /* ekran kengligiga moslashadi */
@@ -4694,6 +4697,9 @@ input {
 }
 
 @media (max-width: 320px) {
+  body{
+    overflow-x: hidden;
+  }
   .components-container>div {
     min-width: 180px;
     height: 600px;
