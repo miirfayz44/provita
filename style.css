@@ -3572,7 +3572,9 @@ input {
 
 @media (max-width: 1439px) {
   body{
+    position: relative;
     overflow-x: hidden;
+    left: 60px;
   }
   .components-container {
     width: 48%;
