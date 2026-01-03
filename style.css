@@ -3168,8 +3168,8 @@ button {
 
 .desktop .mask-group-9 {
   position: absolute;
-  top: 1194px;
-  left: 529px;
+  top: 1200px;
+  left: 665px;
   width: 383px;
   height: 350px;
   display: flex;
@@ -3177,10 +3177,14 @@ button {
 }
 
 .desktop .rectangle-27 {
-  margin-top: 334px;
-  width: 383px;
-  height: 350px;
-  margin-left: -11453px;
+  object-fit: cover;
+  width: 255px;
+  height: 340px;
+  opacity: 1;
+  top: 1243px;
+  left: 657px;
+  border-radius: 20px;
+
 }
 
 .desktop .element-7 {
@@ -3227,12 +3231,122 @@ input {
 }
 
 /* components */
+/* ============ SCROLL WRAPPER ============ */
+.components-container {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  width: 500px;
+  /* 1 componentdan SAL katta */
+  height: 380px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+/* scrollbarni yashirish */
+.components-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* ============ ENG MUHIM QISM ============ */
+/* componentlarni absolute’dan majburan chiqaramiz */
+.components-container>div {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+
+  min-width: 470px;
+  /* FAFAQAT 1 TA KO‘RINADI */
+  height: 348px;
+
+  background-color: var(--xddaw-o, #fff);
+  border-radius: 5px;
+
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+/* ============ ICHKI ELEMENTLAR (FIGMA MOS) ============ */
+.component-title {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 262px;
+  font-size: 30px;
+}
+
+.component-desc {
+  position: absolute;
+  top: 155px;
+  left: 20px;
+  width: 262px;
+  font-size: 18px;
+}
+
+.component-link {
+  position: absolute;
+  top: 273px;
+  left: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  background-color: #0071bc;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.component-strelka {
+  position: absolute;
+  top: 273px;
+  left: 305px;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.component-strelka-1,
+.component-strelka-2,
+.component-strelka-222 {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component-strelka-1 {
+  border: 1px solid #ccc;
+}
+
+.component-strelka-2 {
+  background: #fff;
+}
+
+.component-strelka-222 {
+  background: #0071bc;
+}
+
+/* ============ RASMLAR ============ */
+.slayd_img,
+.slayd_img_111 {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 184px;
+  height: 226px;
+}
+
 .components-container {
   display: flex;
   flex-direction: row;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 482px;
+  left: 832px;
 }
 
 .desktop .component-1 {
@@ -3457,10 +3571,55 @@ input {
 
 
 @media (max-width: 1439px) {
+  .components-container {
+    width: 48%;
+    /* ekran kengligiga moslashadi */
+    height: 360px;
+    /* sal kichraytirildi */
+    gap: 25px;
+    /* kartalar orasidagi masofa kamaydi */
+    margin: 0 auto;
+  }
+
+  .components-container>div {
+    min-width: 450px;
+    /* hali 1 karta ko‘rinadi */
+    height: 320px;
+  }
+
+  .component-title {
+    font-size: 26px;
+    width: 220px;
+  }
+
+  .component-desc {
+    font-size: 16px;
+    width: 220px;
+  }
+
+  .slayd_img,
+  .slayd_img_111 {
+    width: 160px;
+    height: 200px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .component-link {
+    padding: 12px 25px;
+    top: 260px;
+    left: 15px;
+  }
+
+  .component-strelka {
+    top: 260px;
+    left: 270px;
+  }
+
   .desktop .components-container {
     position: absolute;
-    top: 890px;
-    left: -819px;
+    top: 1396px;
+    left: 11px;
   }
 
   .desktop .component-1 {
@@ -3745,10 +3904,15 @@ input {
   .desktop .mask-group-9 {
     width: 212px;
     height: 283px;
-    top: 2199px;
-    left: 368px;
+    left: 515px;
+    top: 2257px;
     border-radius: 10px;
     opacity: 1;
+  }
+
+  .desktop .rectangle-27 {
+    width: 200px;
+    height: 285px;
   }
 
   .desktop .frame-68 {
@@ -4530,35 +4694,96 @@ input {
 }
 
 @media (max-width: 320px) {
+  .components-container>div {
+    min-width: 180px;
+    height: 600px;
+    border-radius: 8px;
+  }
+
+  .component-title {
+    top: 20px;
+    left: 15px;
+    width: 200px;
+    font-size: 20px;
+  }
+
+  .component-desc {
+    top: 200px;
+    /* matnni pastga tushirdik */
+    left: 15px;
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .component-link {
+    top: 380px;
+    /* buttonni pastga tushirdik */
+    left: 15px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .component-strelka {
+    top: 380px;
+    left: 220px;
+    gap: 8px;
+  }
+
+  .component-strelka-1,
+  .component-strelka-2,
+  .component-strelka-222 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .slayd_img,
+  .slayd_img_111 {
+    top: 10px;
+    right: 15px;
+    width: 180px;
+    /* rasmni biroz kattalashtirdik */
+    height: 280px;
+    /* balandlikni containerga moslashtirdik */
+  }
+
+  .desktop .components-container {
+    position: absolute;
+    top: 830px;
+    left: 0px;
+    height: 600px;
+    width: 340px;
+  }
 
   .desktop .slayd_img_111 {
     width: 397px;
     height: 231px;
     opacity: 1;
-    top: -170px;
+    top: -70px;
     left: -3px;
   }
 
-  .desktop .components-container {
-    position: absolute;
-    top: 432px;
-    left: -823px;
+  .desktop .component-title {
+    top: 140px;
+  }
+
+  .desktop .component-desc {
+    top: 247px;
   }
 
   .desktop .component-strelka {
     position: absolute;
-    top: 325px;
+    top: 380px;
     left: 61px;
   }
 
   .desktop .component-link {
-    top: 245px;
+    top: 312px;
     left: 61px;
   }
 
   .desktop .component-1 {
     width: 320px;
-    height: 322px;
+    height: 360px;
     opacity: 1;
   }
 
@@ -4573,7 +4798,7 @@ input {
   .desktop .slayd_img {
     width: 280px;
     height: 166px;
-    top: -170px;
+    top: -70px;
     left: 50px;
   }
 
@@ -4582,31 +4807,52 @@ input {
     top: 479px;
     width: 320px;
     height: 320px;
-}
-.desktop .component-4 {
-  left: 1921px;
-  top: 482px;
-  width: 320px;
-  height: 320px;
-}
-.desktop .component-5 {
-  left: 2300px;
-  top: 482px;
-  width: 320px;
-  height: 320px;
-}
-.desktop .component-6 {
-  left: 2678px;
-  top: 479px;
-  width: 320px;
-  height: 320px;
-}
-.desktop .component-7 {
-  left: 3040px;
-  top: 482px;
-  width: 320px;
-  height: 320px;
-}
+  }
+
+  .desktop .component-4 {
+    left: 1921px;
+    top: 482px;
+    width: 320px;
+    height: 320px;
+  }
+
+  .desktop .component-5 {
+    left: 2300px;
+    top: 482px;
+    width: 320px;
+    height: 320px;
+  }
+
+  .desktop .component-6 {
+    left: 2678px;
+    top: 479px;
+    width: 320px;
+    height: 320px;
+  }
+
+  .desktop .component-7 {
+    left: 3040px;
+    top: 482px;
+    width: 320px;
+    height: 320px;
+  }
+
+  .desktop .mask-group-9 {
+    width: 212px;
+    height: 283px;
+    left: 121px;
+    top: 2344px;
+    border-radius: 10px;
+    opacity: 1;
+  }
+
+  .desktop .rectangle-27 {
+    width: 185px;
+    height: 265px;
+    opacity: 1;
+    top: 50px;
+    left: 70px;
+  }
 
   .desktop .frame-6 {
     display: none;
